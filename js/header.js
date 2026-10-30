@@ -15,7 +15,7 @@ function headHtml() {
             <button id="sidemenubtn" class="lg:hidden"><i class="fa-solid fa-bars text-2xl"></i></button>
             <div class="hidden lg:block ">
                 <ul class="text-right flex flex-row-reverse m-5 gap-5">
-                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='/pages/aboutus.html'>من نحن</a></li>
+                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='./pages/aboutus.html'>من نحن</a></li>
                     <li class="hover:bg-orange-400 py-2 px-4 rounded-xl relative"><button class="dropdownbtn">
                     التسوق
                     <i class="fa-solid fa-caret-down transition-transform duration-300"></i>
@@ -27,8 +27,8 @@ function headHtml() {
                         </div>
                     </li>
 
-                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><button><a href="/pages/contactus.html">تواصل معنا</a></button></li>
-                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='/index.html'>الرئيسيه</a></li>
+                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><button><a href="./pages/contactus.html">تواصل معنا</a></button></li>
+                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='./index.html'>الرئيسيه</a></li>
 
                 </ul>
             </div>
@@ -49,9 +49,9 @@ function headHtml() {
             <img class="bg-contain" src="./imgs/launching soon.png">
             <hr>
             <ul class="text-right  m-5 py-10 flex flex-col gap-3">
-                <li><a href="/index.html">الرئيسيه</a> </li>
-                <li><a href="/pages/aboutus.html">من نحن</a></li>
-                <li><a href="/pages/contactus.html">تواصل معنا</a></li>
+                <li><a href="./index.html">الرئيسيه</a> </li>
+                <li><a href="./pages/aboutus.html">من نحن</a></li>
+                <li><a href="./pages/contactus.html">تواصل معنا</a></li>
                 <li class="">
                     <button class="dropdownbtn">التسوق
                         <i class="fa-solid fa-caret-left transition-transform duration-300"></i>
@@ -108,7 +108,7 @@ function testuser() {
         })
         login.forEach(log => {
             log.addEventListener("click", function () {
-                window.location.href = "/pages/login.html"
+                window.location.href = "./pages/login.html"
             })
         })
 
@@ -125,7 +125,7 @@ function testuser() {
     })
 }
 function gotocart() {
-    window.location.href = '/pages/cart.html'
+    window.location.href = './pages/cart.html'
 }
 
 function showdot() {

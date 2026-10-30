@@ -24,9 +24,9 @@ function footerHtml() {
             <div>
                 <h3 class='text-orange-400 font-semibold text-xl'>صفحات مفيدة</h3>
                 <ul>
-                    <li><a href="/index.html">الرئيسيه</a> </li>
-                    <li><a href="/pages/aboutus.html">من نحن</a></li>
-                    <li><a href="/pages/contactus.html">تواصل معنا</a></li>
+                    <li><a href="./index.html">الرئيسيه</a> </li>
+                    <li><a href="./pages/aboutus.html">من نحن</a></li>
+                    <li><a href="./pages/contactus.html">تواصل معنا</a></li>
                 </ul>
             </div>
             <div>

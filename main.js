@@ -142,13 +142,13 @@ function displayCardByCategories(products) {
 }
 
 function viewProduct(e) {
-    window.location.href = `/pages/productsinglepage.html?id=${e}`
+    window.location.href = `./pages/productsinglepage.html?id=${e}`
 }
 function viewCategory(e) {
 
     let categories = e.attributes[1].value
     console.log(categories);
-    window.location.href = `/pages/productcategory.html?id=${categories}`
+    window.location.href = `./pages/productcategory.html?id=${categories}`
 
 }
 function card(element) {
