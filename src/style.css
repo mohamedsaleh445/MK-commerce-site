@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .input {
+        @apply w-full rounded-lg border border-gray-300 bg-white
+        px-4 py-3 text-sm text-gray-800
+        placeholder:text-gray-400
+        outline-none transition duration-200
+        focus:border-blue-500 focus:ring-2 focus:ring-blue-100;
+    }
+    .label{
+        @apply block text-base font-bold text-gray-700;
+    }
+    .middeltext{
+        @apply absolute top-1/2 left-1/2 ;
+        transform : translate(-50%,-50%);
+    }
+    .besttext{
+        @apply text-xl font-bold m-3 capitalize text-center ;
+        
+    }
+    
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK commerce site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header id="header"> </header>
+
+
+    <section>
+        <div class="relative">
+
+            <div class="bg-black/50 absolute inset-0 h-full w-full z-25"></div>
+            <div class="h-72 w-full bg-[url('../imgs/contact.jpeg')]  bg-cover bg-center  ">
+                <h1 class="lg:text-7xl text-4xl absolute middeltext underline text-white z-50">تواصل معنا</h1>
+
+            </div>
+        </div>
+    </section>
+    <section class=" py-20 ">
+        <div class="flex lg:flex-row flex-col justify-center  ">
+            <div class=" rounded-lg flex flex-col justify-center items-center ">
+                <div class="flex items-center gap-5 p-5 m-5 border border-black rounded-lg bg-blue-100 ml-20 w-80">
+                    <div><i class="fa-brands fa-whatsapp"></i></div>
+                    <div>
+                        <h1>تواصل عن طريق الواتساب </h1>
+                        <p class="text-gray-500 mt-2">01228948473</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 p-5 m-5 border border-black rounded-lg bg-blue-100 ml-20 w-80">
+                    <div><i class="fa-solid fa-map-location"></i></div>
+                    <div>
+                        <h1>موقعنا </h1>
+                        <p class="text-gray-500 mt-2">ش المعز القاهره مصر </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 p-5 m-5 border border-black rounded-lg bg-blue-100 ml-20 w-80">
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h1>تواصل عن طريق الايميل</h1>
+                        <p class="text-gray-500 mt-2">info@MKcommerce-eg.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:w-1/2 p-5">
+                <form action="" class="flex flex-col  gap-3" id="contactform">
+                    <label for="" class="text-gray-800"> اكتب اسم هنا </label>
+                    <input type="text" required placeholder="الاسم" class="input">
+                    <label for="" class="text-gray-800"> اكتب رقم الهاتف </label>
+                    <input type="number" required placeholder="الهاتف" class="input">
+                    <label for="" class="text-gray-800"> اكتب الايميل هنا </label>
+                    <input type="text" required placeholder="الايميل" class="input">
+                    <label for="">تفاصيل الرساله</label>
+                    <textarea name="" id="" required class="h-32 w-full border "></textarea>
+                    <button type="submit" id="sendmass"
+                        class="px-8 py-3 bg-orange-400 rounded-xl text-white text-2xl">ارسل
+                        الرساله</button>
+                </form>
+
+            </div>
+
+
+        </div>
+        <div id="showmassage"
+            class="border hidden absolute bg-gray-100 border-orange-400 lg:w-1/2 w-full h-14 lg:left-36 ml-10">
+
+        </div>
+    </section>
+
+
+    <footer id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../main.js"></script>
+    <script>
+        let sendmass = document.querySelector("#sendmass")
+        sendmass.addEventListener("click", function (e) {
+            e.preventDefault()
+            let inputs = document.querySelectorAll("#contactform input,#contactform textarea")
+            console.log(inputs);
+
+            inputs.forEach(input => {
+                if (input.value === '') {
+                    $("#showmassage").fadeIn(200)
+                    document.querySelector("#showmassage").innerHTML = `<h1 class='text-center font-bold text-3xl text-red-500'>برجاء ادخال البيانات صحيحه</h1>`
+                } else {
+                    $("#showmassage").fadeIn(200)
+                    document.querySelector("#showmassage").innerHTML = `<h1 class='text-center font-bold text-3xl text-green-500'>تم ارسال الرساله بنجاح</h1>`
+                }
+                input.value = ''
+            })
+
+        })
+    </script>
+</body>
+
+</html>

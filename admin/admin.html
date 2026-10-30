@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK commerce site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="adminheader"></header>
+
+    <div id="msg" class="fixed inset-0 rounded-md h-10 w-30 hidden">
+    </div>
+    <section class="py-2">
+        <div class="mx-5 flex gap-7 ">
+            <button class="bg-orange-400 px-5 p-2 text-white text-center rounded-lg" onclick="showAddform()">ضيف منتج
+                جديد</button>
+            <button class="bg-blue-400 px-5 p-2 text-white text-center rounded-lg" onclick="updateProduct()">تعديل منتج
+            </button>
+        </div>
+    </section>
+    <!-- add -->
+    <section class="addproduct py-5 border">
+        <div class="p-5 ">
+            <form action="POST" id="productForm"
+                class="flex flex-col gap-5 border-2 border-orange-300 justify-center  p-14">
+                <h3 class="text-2xl text-center font-bold py-2 capitalize">المعلومات الاساسيه</h3>
+                <input required type="text" placeholder="title" class="input" name="title">
+                <input required type="text" placeholder="description" class="input" name="description">
+                <input type="file" accept="image/png,image/jpg">
+                <select type="text" class="input selected" name="category" required>
+                    <option value="" selected disabled>choose category</option>
+                </select>
+                <input required type="number" placeholder="rating" class="input" name="rating">
+                <input required type="number" placeholder="stock" class="input" name="stock">
+                <input required type="number" placeholder="price" class="input" name="price">
+                <h3 class="text-2xl text-center font-bold py-2 capitalize">ابعاد المنتج</h3>
+                <input required type="number" placeholder="width" class="input" name="width">
+                <input required type="number" placeholder="height" class="input" name="height">
+                <input required type="number" placeholder="depth" class="input" name="depth">
+                <button type="submit" class="bg-orange-400 px-5 p-2 text-white text-center rounded-lg">اضف
+                    المنتج</button>
+            </form>
+        </div>
+        <div>
+            <h1 class="text-center text-2xl font-bold">المنتجات المضاف</h1>
+        </div>
+        <div class="text-center text-white" id="noproduct">
+            <h3 class="bg-orange-600">لا يوجد منتجات تم اضافتها</h3>
+        </div>
+        <div class="grid grid-cols-2 gap-1 w-full" id="displayProduct">
+
+        </div>
+    </section>
+
+    <!-- update -->
+    <section class="hidden update border-2 border-orange-300  p-5 relative">
+        <div id="showUpdate" class="fixed justify-center inset-0 bg-black/30 hidden ">
+            <div id="showUpdateData" class="middeltext max-h-screen lg:w-1/2 w-full bg-white rounded-lg absolute">
+
+            </div>
+
+
+        </div>
+        <div class="updatesearch flex gap-2 py-5">
+            <input class="input" type="text" placeholder="اكتب اللى بتدور عليه">
+            <select class="input" name="" id="">
+                <option value="choose">ابحث عن طريق ...</option>
+                <option value="name">الاسم</option>
+                <option value="price">السعر</option>
+                <option value="id">رقم المنتج</option>
+            </select>
+            <button type="button" class="px-10 py-1.5 bg-blue-500 text-white rounded-lg"
+                onclick="searchproduct()">ابحث</button>
+            <button type="button" class="px-10 py-1.5 bg-blue-500 text-white rounded-lg" onclick="restsearch()">اعاده
+                تعيين</button>
+        </div>
+        <div class="text-center w-full">
+            <table class="w-full text-center border-collapse py-3">
+                <thead class=" capitalize bg-gray-300 border-collapse">
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>category</th>
+                        <th>price</th>
+                        <th>select</th>
+                    </tr>
+                </thead>
+                <tbody id="update">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer id="adminfooter"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+
+</html>

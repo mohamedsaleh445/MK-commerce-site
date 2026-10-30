@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK commerce site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+<body class="relative">
+
+    <div class=" bg-black/30 absolute inset-0 -z-50">
+    </div>
+
+
+    <div class="min-h-screen flex items-center justify-center p-4 z-40 bg-[url('../imgs/hero1.png')]">
+        <div id="loginform" class=" bg-orange-300/50  h-[30rem] w-full max-w-[60rem]  rounded-lg  shadow-xl  ">
+
+            <div class="flex align-middle text-center relative items-center justify-center h-full">
+                <div class="h-8  border hidden border-red-400 w-1/2 absolute top-0 left-1/4  bg-black/30 loginmassage ">
+                </div>
+                <div class="w-1/2 p-5">
+                    <form action="" id="login" class="flex flex-col gap-5 ">
+                        <label class="label text-md font-bold " for="name">اسم المستخدم</label>
+                        <input class="input" id="loginname" name="name" type="text" placeholder="الاسم هنا">
+                        <label class="label" for="pass">الرقم السرى</label>
+                        <input class="input" id="loginpass" type="password" name="pass" placeholder="الرقم السرى هنا">
+                        <button type="submit" id="loginbtn" class="px-5 py-2 bg-orange-500/30 hover:bg-orange-400">سجل
+                            دخول</button>
+                        <button type="button" class="swith">ليس لديك حساب.... <span
+                                class="text-orange-500 hover:text-orange-600">سجل
+                                الان</span></button>
+                    </form>
+                </div>
+                <div class="w-1/2 text-3xl font-bold">
+                    <h1>مرحبا بك فى موقعنا</h1>
+                    <h3>حيث يوجد كل ما تتمناه</h3>
+                </div>
+            </div>
+        </div>
+        <div id="signupform" class=" bg-orange-300/50 h-[30rem] w-full max-w-[60rem]  rounded-lg hidden  shadow-xl ">
+            <div class="flex align-middle text-center items-center justify-center relative h-full">
+                <div
+                    class="h-8  border hidden border-red-400 w-1/2 absolute top-0 left-1/4  bg-black/30 singupmassage ">
+                </div>
+                <div class="w-1/2 p-5">
+                    <form action="" class="flex flex-col gap-2 " id="sigup">
+                        <label class="label " for="">اسم المستخدم</label>
+                        <input class="input" type="text" id="signupname" placeholder="الاسم هنا">
+                        <label class="label" for="">اكتب الايميل</label>
+                        <input class="input" type="text" id="signupemail" placeholder="الايميل هنا">
+                        <label class="label" for="">الرقم السرى</label>
+                        <input class="input" type="password" id="signuppass" placeholder="الرقم السرى هنا">
+                        <label class="label" for="">كرر الرقم السرى</label>
+                        <input class="input" type="password" id="signuppassrepet" placeholder="كرر الرقم السرى هناك">
+                        <button type="submit" class="px-5 py-2 bg-orange-500/30 hover:bg-orange-400">سجل الان
+                        </button>
+                        <button type="button" class="swithback"> لديك حساب.... <span
+                                class="text-orange-500 hover:text-orange-600">سجل
+                                دخول</span></button>
+                    </form>
+                </div>
+                <div class="w-1/2 text-3xl font-bold">
+                    <h1>مرحبا بك فى موقعنا</h1>
+                    <h3>حيث يوجد كل ما تتمناه</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
