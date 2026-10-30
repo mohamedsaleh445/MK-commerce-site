@@ -4,7 +4,7 @@ function footerHtml() {
 
     footer.innerHTML = ` <div class="bg-blue-950 w-full gap-6 text-white flex flex-col md:flex-row text-center justify-center md:justify-evenly py-10">
             <div class='flex flex-col gap-5 justify-center  items-center'>
-                <img src="../imgs/launching soon.png" class="w-1/2  md:w-full h-20" alt="">
+                <img src="./imgs/launching soon.png" class="w-1/2  md:w-full h-20" alt="">
                 <p>متجر متخصص في بيع المنتجات المستوردة عالية الجودة<br> بأسعار تنافسية لتلبية احتياجاتك.
 
                 </p>
@@ -24,9 +24,9 @@ function footerHtml() {
             <div>
                 <h3 class='text-orange-400 font-semibold text-xl'>صفحات مفيدة</h3>
                 <ul>
-                    <li><a href="../index.html">الرئيسيه</a> </li>
-                    <li><a href="../pages/aboutus.html">من نحن</a></li>
-                    <li><a href="../pages/contactus.html">تواصل معنا</a></li>
+                    <li><a href="/index.html">الرئيسيه</a> </li>
+                    <li><a href="/pages/aboutus.html">من نحن</a></li>
+                    <li><a href="/pages/contactus.html">تواصل معنا</a></li>
                 </ul>
             </div>
             <div>
