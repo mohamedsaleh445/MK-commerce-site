@@ -7,7 +7,7 @@ function headHtml() {
         </div >
         <div class="flex w-full justify-between items-center align-middle pt-2 md:pt-0  flex-row-reverse">
             <div class='flex items-center flex-row-reverse gap-3 relative'>
-            <img src="../imgs/launching soon.png" class="w-24 " alt="" >
+            <img src="./imgs/launching soon.png" class="w-24 " alt="" >
             <button onclick='gotocart()' class='relative gotocart'><i class="fa-solid fa-cart-shopping text-xl" style="color: rgb(158, 144, 92);"></i>
             <span id='cartdot' class='h-2 w-2 rounded-full bg-red-600 absolute top-0 left-0  hidden '></span>
             </button>           
@@ -27,8 +27,8 @@ function headHtml() {
                         </div>
                     </li>
 
-                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><button><a href="../pages/contactus.html">تواصل معنا</a></button></li>
-                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='../index.html'>الرئيسيه</a></li>
+                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><button><a href="./pages/contactus.html">تواصل معنا</a></button></li>
+                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='./index.html'>الرئيسيه</a></li>
 
                 </ul>
             </div>
@@ -49,9 +49,9 @@ function headHtml() {
             <img class="bg-contain" src="../imgs/launching soon.png">
             <hr>
             <ul class="text-right  m-5 py-10 flex flex-col gap-3">
-                <li><a href="../index.html">الرئيسيه</a> </li>
-                <li><a href="../pages/aboutus.html">من نحن</a></li>
-                <li><a href="../pages/contactus.html">تواصل معنا</a></li>
+                <li><a href="./index.html">الرئيسيه</a> </li>
+                <li><a href="./pages/aboutus.html">من نحن</a></li>
+                <li><a href="./pages/contactus.html">تواصل معنا</a></li>
                 <li class="">
                     <button class="dropdownbtn">التسوق
                         <i class="fa-solid fa-caret-left transition-transform duration-300"></i>
@@ -108,7 +108,7 @@ function testuser() {
         })
         login.forEach(log => {
             log.addEventListener("click", function () {
-                window.location.href = "/login/login.html"
+                window.location.href = "./login/login.html"
             })
         })
 
