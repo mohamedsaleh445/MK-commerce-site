@@ -7,7 +7,7 @@ function headHtml() {
         </div >
         <div class="flex w-full justify-between items-center align-middle pt-2 md:pt-0  flex-row-reverse">
             <div class='flex items-center flex-row-reverse gap-3 relative'>
-            <img src="../imgs/launching soon.png" class="w-24 " alt="" >
+            <img src="./imgs/launching soon.png" class="w-24 " alt="" >
             <button onclick='gotocart()' class='relative gotocart'><i class="fa-solid fa-cart-shopping text-xl" style="color: rgb(158, 144, 92);"></i>
             <span id='cartdot' class='h-2 w-2 rounded-full bg-red-600 absolute top-0 left-0  hidden '></span>
             </button>           
