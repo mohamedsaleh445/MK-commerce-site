@@ -15,7 +15,7 @@ function headHtml() {
             <button id="sidemenubtn" class="lg:hidden"><i class="fa-solid fa-bars text-2xl"></i></button>
             <div class="hidden lg:block ">
                 <ul class="text-right flex flex-row-reverse m-5 gap-5">
-                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='../pages/aboutus.html'>من نحن</a></li>
+                    <li class="hover:bg-orange-400 py-2 px-4 rounded-xl"><a href='/pages/aboutus.html'>من نحن</a></li>
                     <li class="hover:bg-orange-400 py-2 px-4 rounded-xl relative"><button class="dropdownbtn">
                     التسوق
                     <i class="fa-solid fa-caret-down transition-transform duration-300"></i>
@@ -46,7 +46,7 @@ function headHtml() {
         </div>
 
         <div id="sidemenu" class="hidden absolute right-0  shadow-xl h-screen w-1/2 rounded-lg z-50 bg-white">
-            <img class="bg-contain" src="../imgs/launching soon.png">
+            <img class="bg-contain" src="./imgs/launching soon.png">
             <hr>
             <ul class="text-right  m-5 py-10 flex flex-col gap-3">
                 <li><a href="./index.html">الرئيسيه</a> </li>
