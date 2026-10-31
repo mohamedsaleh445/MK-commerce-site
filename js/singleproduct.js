@@ -158,5 +158,5 @@ function checkifproducexist() {
 }
 
 $(document).on("click", "#alreadyadded", function () {
-    window.location.href = "./pages/cart.html";
+    window.location.href = "${paths.pages}cart.html";
 });
