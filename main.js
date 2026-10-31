@@ -43,7 +43,7 @@ function displayCategoriesTyps(value) {
         html += `<div class="px-2">
     <div class="flex flex-col items-center justify-center">
     <button onclick=viewCategory(this) datacat=${element.slug}>
-    <img src="imgs/${(i % imgs.length) + 1}.jpg" class="cursor-pointer h-20 w-20 rounded-full object-cover md:h-28 md:w-28" alt="${imgs.name}" >
+    <img src="${paths.images}${(i % imgs.length) + 1}.jpg" class="cursor-pointer h-20 w-20 rounded-full object-cover md:h-28 md:w-28" alt="${imgs.name}" >
     <h1 class="mt-2 text-center text-sm font-bold md:text-xl">
     ${element.name}
     </h1></button>
@@ -142,13 +142,13 @@ function displayCardByCategories(products) {
 }
 
 function viewProduct(e) {
-    window.location.href = `${paths.pages}/productsinglepage.html?id=${e}`
+    window.location.href = `${paths.pages}productsinglepage.html?id=${e}`
 }
 function viewCategory(e) {
 
     let categories = e.getAttribute('datacat')
     //console.log(categories);
-    window.location.href = `${paths.pages}/productcategory.html?id=${categories}`
+    window.location.href = `${paths.pages}productcategory.html?id=${categories}`
 
 }
 function card(element) {
