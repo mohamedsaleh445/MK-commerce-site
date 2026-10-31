@@ -81,7 +81,7 @@ function displayCategories(catefories) {
     }
     const categorylinks = catefories.slice(0, 11)
     categorylinks.forEach(e => {
-        footer += `<a datacat=${e.slug}>${e.name} </a>`;
+        footer += `<button onclick=viewCategory(this) datacat=${e.slug}>${e.name} </button>`;
         headerlink += `<li class=" mt-3 px-5  rounded-lg">
         <button  onclick=viewCategory(this) datacat=${e.slug} >
         ${e.name}</li>
